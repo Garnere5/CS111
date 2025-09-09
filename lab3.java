@@ -11,12 +11,16 @@ public class lab3 {
         System.out.println();
         System.out.println(power(3, 6));
         System.out.println();
+        System.out.println(power(6, 10));
+        System.out.println();
 
         
         // call to gcd function
         System.out.println(gcd(10, 75));
         System.out.println();
         System.out.println(gcd(100, 20));
+        System.out.println();
+        System.out.println(gcd(17, 31));
         System.out.println();
 
     }
