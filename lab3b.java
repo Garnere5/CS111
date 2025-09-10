@@ -3,6 +3,7 @@
 // Prof. Lehman
 // Demonstrates recursive algorithm to "flood fill"
 // an ASCII graphic
+//For further revefence, would I add a completely different code to get the third box to fill the border to a different letter?
 
 class lab3b {
     public static void main(String[] args) {
