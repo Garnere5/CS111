@@ -28,15 +28,21 @@ public class Palindrome {
         
     }// main
 
+    
     // *** use StackCharArray and QueueCharArray here to determine Palindrome
     public static boolean palindrome(String word) {
+        StackCharArray Stack = new StackCharArray(word.length());
+        QueueCharArray Queue = new QueueCharArray(word.length());
 
         //assume status is true
         boolean status = true;
         
+        for (int i = 0; i < word.length(); i++){
+            Stack.push(word.charAt(i));
+            Queue.add(word.charAt(i));
+        }
 
-        
-        while (Stack != 0 && Queue != 0 && status == true){
+        while (!Stack.empty() && status == true){
             if (Stack.top() != Queue.front()){
                 status = false;
             } else {
